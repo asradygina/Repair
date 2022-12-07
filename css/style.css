@@ -22,6 +22,9 @@ span,
 body,
 ul,
 li,
+div, 
+img,
+dd,
 ::after,
 ::before {
 margin: 0;
@@ -192,6 +195,7 @@ li {
 .projects__list {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 47px;
     
     
 }
@@ -213,4 +217,141 @@ li {
     color: #E3B873;
 }
 .slider {
+    display: flex;
+    justify-content: space-between;
+
+
 }
+.slider__content {
+    flex-basis: 442px;
+    margin-right: 50px;
+}
+.slider__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 34px ;
+}
+.slider__text {
+    color: #fff;
+    line-height: 27px;
+    margin-bottom: 42px;
+}
+.slider__menu {
+    display: flex;
+    flex-wrap: wrap;    
+}
+.slider__menu dl {
+    margin-right: 10px;
+    flex-basis: 180px;
+}
+.slider__menu dt {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 9px;
+}
+.slider__menu dd {
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.slider_image img {
+    
+}
+.control {
+}
+.small__container {
+    max-width: 817px;
+    margin: 0 auto;
+}
+.control_inner {
+}
+.control__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+
+}
+.control_img::before {
+    content: "";
+    
+    
+
+}
+.control_video {
+    margin-top: 30px;
+    max-width: 817px; 
+    z-index: 1;
+    
+    
+}
+
+.control__link {
+    width: 84px;
+    height: 84px;
+    
+    top: calc(50% - 42px);
+    right: calc(50%-42px); 
+
+}
+.control__text {
+}
+.control_form {
+}
+.label__box {
+}
+.button {
+}
+.button__form {
+}
+.form__checkbox {
+}
+.label {
+}
+.checkbox {
+}
+.fake {
+}
+.text {
+}
+.label {
+    cursor: pointer;
+  }
+  .checkbox{
+    display: none;
+  }
+  
+  .fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+  }
+  .fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+  }
+  .checkbox:checked + .fake::before{
+    opacity: 1;
+  }
+
