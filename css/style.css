@@ -12,6 +12,7 @@
 }
 * {
     box-sizing: border-box;
+    
 }
 h1,
 h2,
@@ -266,16 +267,24 @@ li {
     color: #fff;
 }
 
-.slider_image img {
-    
+.slider_image {
+    display: block;
+    vertical-align: bottom;
+    max-width: 679px;
+    height: 482px;
+
 }
+
 .control {
+    margin-top: -300px;
 }
 .small__container {
     max-width: 817px;
     margin: 0 auto;
 }
-.control_inner {
+.control_img  img{
+    display: block;
+    margin: 0 auto;
 }
 .control__title {
     font-family: 'Yeseva One';
@@ -289,39 +298,90 @@ li {
     margin-bottom: 12px;
 
 }
-.control_img::before {
-    content: "";
-    
-    
 
-}
 .control_video {
     margin-top: 30px;
+    background-image: url(../image/control_video.jpg);
+    background-color: #131313;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     max-width: 817px; 
-    z-index: 1;
-    
+    height: 434px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+    margin-bottom: 62px;
     
 }
 
-.control__link {
-    width: 84px;
-    height: 84px;
-    
-    top: calc(50% - 42px);
-    right: calc(50%-42px); 
 
+.control__link  {
+    display:block; 
+
+}
+.control__link img {
+    display: block;
+    max-width: 100%;
+    
 }
 .control__text {
+    max-width: 670px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    padding-top: 34px;
+    position: relative;
+    margin-bottom: 92px;
+    
 }
+.control__text::before {
+    content: "";
+    border-top: 2px solid #E3B873;
+    width: 54px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 27px)
+
+}
+
 .control_form {
 }
 .label__box {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    margin-bottom: 37px;
+}
+.label__title {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+    margin-bottom: 7px;
+}
+.label__box input {
+    padding-bottom: 8px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    width: 230px;
+
+    
 }
 .button {
 }
 .button__form {
+    background-color: #E3B873;
+    width: 250px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
 }
 .form__checkbox {
+    text-align: center;
 }
 .label {
 }
@@ -354,4 +414,103 @@ li {
   .checkbox:checked + .fake::before{
     opacity: 1;
   }
+.repair {
+    margin-top: 145px;
+}
+.container {
+}
+.repair__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin-bottom: 13px; 
+}
+.repair_icon {
+    display: block;
+    margin: 0 auto;
+    
+}
+.repair__cards {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.repair__card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #131313;
+    padding-top: 294px;
+    padding-left: 31px;
+    padding-right: 31px;
+    flex-basis: 392px;
+    height: 421px;
+    
+}
+.card__redecorating {
+    background-image: url(../image/repair_1.png);
+  
+}
+.card__overhaul {
+    background-image: url(../image/repair_2.png);
+}
+.card__designer {
+    background-image: url(../image/repair_3.png);
 
+}
+.repair__card-text {
+    padding: 34px 25px 49px;    
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+}
+.card__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin-bottom: 13px;
+}
+.card__list {
+    padding-left: 16px;
+    
+    
+}
+.card__item {
+    margin-bottom: 10px;
+    list-style-type: inherit;
+    font-size: 13px;
+    color: #959595;
+    
+}
+
+.button {
+}
+.repair__button {
+    display: block;
+    width: 228px;
+    height: 54px;
+    padding: 17px 24px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    border: none;
+    border-radius: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: -30px;
+   
+   
+    
+}
