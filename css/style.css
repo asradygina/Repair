@@ -10,10 +10,14 @@
     font-family: 'Yeseva One', cursive;
     src: url(../fonts/YesevaOne-Regular.ttf);
 }
-* {
+*,
+::after,
+::before {
     box-sizing: border-box;
     
 }
+
+
 h1,
 h2,
 h3,
@@ -416,6 +420,7 @@ li {
   }
 .repair {
     margin-top: 145px;
+    
 }
 .container {
 }
@@ -440,31 +445,15 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.repair__card {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #131313;
-    padding-top: 294px;
-    padding-left: 31px;
-    padding-right: 31px;
-    flex-basis: 392px;
-    height: 421px;
     
 }
-.card__redecorating {
-    background-image: url(../image/repair_1.png);
-  
-}
-.card__overhaul {
-    background-image: url(../image/repair_2.png);
-}
-.card__designer {
-    background-image: url(../image/repair_3.png);
 
+.repair__card-content {
+    margin: -126px auto 0;
+    max-width: 330px ;
+    position: relative;
 }
-.repair__card-text {
+.repair__card-text {    
     padding: 34px 25px 49px;    
     background-color: #fff;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -480,37 +469,213 @@ li {
     margin-bottom: 13px;
 }
 .card__list {
-    padding-left: 16px;
-    
-    
+    padding-left: 16px;    
 }
 .card__item {
     margin-bottom: 10px;
     list-style-type: inherit;
     font-size: 13px;
     color: #959595;
-    
 }
 
-.button {
-}
-.repair__button {
-    display: block;
+
+.repair__box {
     width: 228px;
     height: 54px;
     padding: 17px 24px;
     background: #E3B873;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     border: none;
-    border-radius: 0;
     font-family: 'Yeseva One';
     font-style: normal;
+    color: #fff;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-    margin-top: -30px;
+    margin-top: -27px;    
+}
+.advantage {
+    margin-top: 228px;
+    margin-bottom: 244px;
+    background-image: url(../image/bcg_advantage.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 710px;
+
    
-   
+}
+.container {
+}
+.advantage__content {
     
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.advantage__text {
+    padding-left: 146px;
+    padding-top: 62px;
+    
+}
+.advantage__text-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 86px;
+    
+    width: 380px;
+}
+.advantage__text-image {
+    display: block;
+    max-width: 56px;
+    height: auto;    
+    margin-right: 10px;
+    
+}
+.advantage__form {
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    padding: 28px 49px;
+    width: 506px;
+    color: #fff;
+}
+.advantage__form-title {
+    width: 290px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 39px;
+
+}
+
+.form__row {
+}
+
+.form__row:nth-child(n+2) {
+    margin-top: 48px;
+}
+
+.form-group {
+}
+.form-hint {
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 7px;
+
+}
+.field {
+    background-color: transparent;
+    width: 408px;
+    outline: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    line-height: 23px; 
+    color: #fff;    
+    
+}
+.field::-moz-placeholder {
+    color: #fff;
+}
+.field::-webkit-input-placeholder{
+    color: #fff;
+}
+.form__adv {
+    margin-top: 20px;
+    margin-bottom: 37px;
+}
+.form__button {
+    display: flex;
+    justify-content: flex-end;
+}
+.form__checkbox {
+}
+.label {
+}
+.checkbox {
+}
+.fake {
+}
+.text {
+}
+.button {
+}
+.advantage__form-button {
+
+}
+.advantage__bottom {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    margin-top: 38px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+      
+   
+}
+.advantage__icon {
+    margin-right: 25px;
+
+}
+.fantaies {
+    background-image: url('../image/bcg-fantasies.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+}
+.fantasies__content {
+    display: flex;
+    justify-content: space-between
+
+}
+.fantasies__content-text {
+    margin-right: 20px;
+    padding-top: 136px;
+    padding-bottom: 75px;
+    max-width: 300px;
+
+
+}
+.fantasies__content-title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 47px;
+}
+.fanasies__content-list {
+}
+.fantsies__content-item {
+    margin-bottom: 25px;
+}
+.fantasies__content-link {
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.fantasies__content-link:hover {
+    color: #E3B873;
+    border-bottom: 1px dotted #E3B873;}
+
+.fantasies__content-images {
+    flex-basis: 756px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.fantasies__content-images:nth-child(-n+2) {
+    margin-bottom: 40px;
 }
