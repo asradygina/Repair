@@ -58,7 +58,7 @@ li {
  }
 
 .header__container {
-    max-width: 1280;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -632,7 +632,7 @@ li {
     height: 852px;
     padding-top: 136px;
     padding-bottom: 80px; 
-    margin-bottom: 125px;   
+      
 }
 .container {
 }
@@ -706,7 +706,14 @@ li {
     right: 0;
 }
 .clients {
+    padding: 125px 0 354px;
+    background-image: url(../image/Frame.jpg);
+    background-repeat: no-repeat;    
+    background-position: bottom left;    
+    background-size: 50vw 70%;  
+
 }
+
 .container {
 }
 .clients__title {
@@ -741,10 +748,11 @@ li {
 }
 .client__card {
     
+    
 
 }
 .client__card-content {
-    padding: 24px 20px;
+    padding: 20px 24px 67px;
     background: #FFFFFF;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
@@ -811,8 +819,79 @@ li {
 
 }
    
-   
+.footer__top {
+    background-image: url(../image/footer_bcg.jpg);
+    background-color: #181818;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
+
+}
+.container {
+}
+.form__box {
+    padding: 34px 138px;
+    background-color: #131313;
+    
+    max-width: 883px;
+    margin: 0 auto;
+}
+.form__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+
+}
+.footer__form {
+    text-align: center;
+
+}
+.footer__form-label {
+}
+.footer__form-label{
+    display: inline-block;
+    
+}
+.footer__field:nth-child(-n+2) {
+    
+}
+.form__label-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.label__title {
+}
+.form__checkbox {
+}
+.form__footer {
+}
+.label {
+}
+.checkbox {
+}
+.fake {
+}
+.text {
+}
+.button {
+}
+.footer__form-button {
+}
+.contacts__footer {
+}
+.footer__address {
+}
+.social__footer {
+}
+.map {
+}    
    
     
     
