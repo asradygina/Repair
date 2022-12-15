@@ -22,7 +22,7 @@
                 </ul>
                 <div class="header__contacts">
                     <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
-                    <button class="button">Request a call</button>
+                    <button class="button" type="submit">Request a call</button>
                 </div>
             </div>
         </div>       
@@ -39,8 +39,8 @@
                         cost of materials due to the organization of work
                     </p>
                     <div class="promo__button-box">
-                        <button class="button button__promo">CALCULATE THE COST</button>
-                        <button class="button button__promo">SUBMIT YOUR APPLICATION</button>
+                        <button class="button button__promo" type="submit">CALCULATE THE COST</button>
+                        <button class="button button__promo" type="submit">SUBMIT YOUR APPLICATION</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                                 <p class="label__title">Phone</p>
                                 <p><input type="text" placeholder="Your phone number:"></p>
                             </label>
-                            <button class="button button__form">SUBMIT</button>
+                            <button class="button button__form" type="submit">SUBMIT</button>
                         </div>
                         <div class="form__checkbox">
                         <label class="label">
@@ -242,7 +242,7 @@
                             </label>
                         </div>
                         <div class="form__button">
-                        <button class="button advantage__form-button">Call the measurer</button>
+                        <button type="submit" class="button advantage__form-button">Call the measurer</button>
                     </div>
 
                     </form>
@@ -406,22 +406,29 @@
     <footer class="footer">
         <div class="footer__top">
             <div class="container">
+                <div class="footer__top-inner">
                 <div class="form__box">
                     <h3 class="form__title">have any questions?</h3>
                     <form action="" class="footer__form">
                         <div class="form__label-box">
-                        <lebel class="footer__form-label">
-                            <p class="form-hint label__title">Name</p>
-                            <p><input type="text" class="field footer__field" placeholder="What is your name:"></p>
-                        </lebel>
-                        <lebel class="footer__form-label">
-                            <p class="form-hint label__title">Phone</p>
-                            <p><input type="text" class="field footer__field" placeholder="Your phone number:"></p> 
-                        </lebel>
-                        <lebel class="footer__form-label">
-                            <p class="form-hint label__title">Question</p>
-                            <p><input type="text" class="field footer__field" placeholder="I want to know:"></p>
-                        </lebel>
+                        <div class="form__label">
+                            <lebel>
+                                <p class="form-hint">Name</p>
+                                <p><input type="text" class="field footer__field" placeholder="What is your name:" required></p>
+                            </lebel>
+                        </div>
+                        <div class="form__label">
+                            <lebel>
+                                <p class="form-hint">Phone</p>
+                                <p><input type="text" class="field footer__field"  placeholder="Your phone number:" required></p> 
+                            </lebel>
+                        </div>
+                        <div class="form__label">
+                            <lebel>
+                                <p class="form-hint">Question</p>
+                                <p><input type="text" class="field footer__field" placeholder="I want to know:" required></p>
+                            </lebel>
+                        </div>
                     </div>
                         <div class="form__checkbox form__footer">
                             <label class="label">
@@ -437,33 +444,35 @@
                 </div>
                 <div class="contacts__footer">
                     <address class="footer__address">
+                        <div class="address__title">Rostov-on-Don, Nansen St., 239 Shopping Center
+                            Decorum Tel +7 (928) 768 32 29</div>
                         <div class="social__footer">
-                            <a href="" ></a>
-                            <a href=""></a>
+                            <a href="" ><img src="image/email.svg" alt=""></a>
+                            <a href=""><img src="image/instagram.svg" alt=""></a>
                         </div>
                     </address>                
                     <div class="map">
-                        <img src="" alt="">
+                        <img src="image/map.png" alt="">
                     </div>
                 </div>
-                
+            </div> 
             </div>
         </div>
         <div class="footer__bottom">
-            <div class="header__container">
-                <div class="header__inner">
+            <div class="footer__container">
+                <div class="footer__inner">
                     <div class="logo"><a href="" class="logo-link">IC "Repair Design Project"</a></div>
-                    <ul class="header__list">
-                        <li class="header__item"><a href="" class="header__link">HOME</a></li>
-                        <li class="header__item"><a href="" class="header__link">PROJECTS</a></li>
-                        <li class="header__item"><a href="" class="header__link">MEASUREMENT</a></li>
-                        <li class="header__item"><a href="" class="header__link">TEAM</a></li>
-                        <li class="header__item"><a href="" class="header__link">REVIEWS</a></li>
-                        <li class="header__item"><a href="" class="header__link">CONTACTS</a></li>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="" class="footer__link">HOME</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">PROJECTS</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">MEASUREMENT</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">TEAM</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">REVIEWS</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">CONTACTS</a></li>
                     </ul>
-                    <div class="header__contacts">
-                        <a href="tel:+79287683239" class="header__phone">+7 (928) 768-32-39</a>
-                        <button class="button">Request a call</button>
+                    <div class="footer__contacts">
+                        <a href="tel:+79287683239" class="footer__phone">+7 (928) 768-32-39</a>
+                        <button class="button" type="submit">Request a call</button>
                     </div>
                 </div>
             </div>       
