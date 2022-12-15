@@ -50,19 +50,19 @@ li {
     color: #363636;
  }
 
-.header {
-    
+.header,
+.footer__bottom {    
     background-color: #131313;
-    
-
  }
 
-.header__container {
+.header__container,
+.footer__container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 10px;
 }
-.header__inner {
+.header__inner,
+.footer__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,36 +80,43 @@ li {
 .logo-link:hover {
     color: #E3B873 ;
 }
-.header__list {
+.header__list,
+.footer__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: -47px;
 }
-.header__item {
+.header__item,
+.footer__item {
     margin-right: 47px;
 }
-.header__link {
+.header__link,
+.footer__link {
     text-transform: uppercase;
     color: #fff;
     font-size: 11px;
     cursor: pointer;
 }
 
-.header__link:hover {
+.header__link:hover,
+.footer__link:hover {
     color: #E3B873;
 }
 
-.header__contacts {
+.header__contacts,
+.footer__contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header__phone {
+.header__phone,
+.footer__phone {
     color: #fff;
     margin-right: 45px;
 }
-.header__phone:hover {
+.header__phone:hover,
+.footer__phone:hover {
     text-decoration: underline;
     color: #E3B873;
 }
@@ -568,7 +575,7 @@ li {
 }
 .field {
     background-color: transparent;
-    width: 408px;
+    width: 100%;
     outline: 0;
     border-top: none;
     border-left: none;
@@ -714,8 +721,6 @@ li {
 
 }
 
-.container {
-}
 .clients__title {
     font-family: 'Yeseva One';
     font-style: normal;
@@ -738,7 +743,6 @@ li {
     text-align: center;
     font-size: 18px;
     line-height: 29px;
-
 }
 .clients__box {
     display: flex;
@@ -746,11 +750,7 @@ li {
     align-items: center;
     gap: 0 54px;
 }
-.client__card {
-    
-    
 
-}
 .client__card-content {
     padding: 20px 24px 67px;
     background: #FFFFFF;
@@ -826,16 +826,37 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     
+    position: relative;
+    z-index: 4;
+    
 
 }
+.footer__top::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+
+}
+.footer__top-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+
+}
+
 .container {
 }
 .form__box {
     padding: 34px 138px;
-    background-color: #131313;
-    
+    background-color: #131313;    
     max-width: 883px;
-    margin: 0 auto;
+    margin: -222px auto 52px;
 }
 .form__title {
     font-family: 'Yeseva One';
@@ -849,22 +870,33 @@ li {
     margin-bottom: 45px;
 
 }
-.footer__form {
-    text-align: center;
+.form__label:nth-child(-n+2) {   
+    width: 230px;
+    
+}
+.form__label:nth-child(3) {
+    width: 100%
+}
+    
+    
+    
 
-}
-.footer__form-label {
-}
-.footer__form-label{
-    display: inline-block;
-    
-}
-.footer__field:nth-child(-n+2) {
-    
-}
+
 .form__label-box {
+
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 520px;
+    margin: 0 auto;
+    gap: 48px 58px;
+    margin-bottom: 46px;
+}
+
+
+.footer__field  {
+   
+    
 }
 .label__title {
 }
@@ -883,12 +915,35 @@ li {
 .button {
 }
 .footer__form-button {
+    display: block;
+    margin: 50px auto 0;
+    width: 200px;
+    height: 51px;
+   
 }
 .contacts__footer {
+}
+.address__title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    
+    text-transform: uppercase;
+    color: #E3B873;
+    width: 588px;
+    margin: 0 auto;
+    text-align: center;
+
 }
 .footer__address {
 }
 .social__footer {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 0 15px;
 }
 .map {
 }    
