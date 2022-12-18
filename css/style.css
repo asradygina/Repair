@@ -976,6 +976,24 @@ li {
 }
 
 }
+@media (max-width: 1150px) {
+    .projects__list {
+        display: none;
+    }
+    .slider {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .slider__content {
+        margin-right: 0;
+        padding: 0 32px;
+    }
+    .slider__menu {
+        margin: 0 auto;
+    }
+}
 @media (max-width: 768px) {
     .header__list,
     .footer__list {
