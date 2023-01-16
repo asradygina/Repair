@@ -1045,6 +1045,7 @@ li {
     .projects__list {
         display: none;
     }
+<<<<<<< HEAD
    
     .section__projects {
         margin: 0 auto;
@@ -1169,6 +1170,22 @@ li {
 
 }
 
+=======
+    .slider {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .slider__content {
+        margin-right: 0;
+        padding: 0 32px;
+    }
+    .slider__menu {
+        margin: 0 auto;
+    }
+}
+>>>>>>> 95fe1d051dde424955c0a993cc7d2e44454ec24b
 @media (max-width: 768px) {
     .header__list,
     .footer__list {
